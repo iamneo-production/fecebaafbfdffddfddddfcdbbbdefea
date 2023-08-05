@@ -14,8 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+
 
 @SpringBootTest(classes = SpringappApplication.class)
 @AutoConfigureMockMvc
