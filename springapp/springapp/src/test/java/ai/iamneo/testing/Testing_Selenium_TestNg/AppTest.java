@@ -1,53 +1,53 @@
 package ai.iamneo.testing.Testing_Selenium_TestNg;
 
 public class AppTest {
-    // public static void main (String[] args) {
-    //     System.out.println("Hello World!");
+    public static void main (String[] args) {
+        System.out.println("Hello World!");
+    }
+    
+    
+
+    // private WebDriver driver;
+
+    // @BeforeMethod
+    // public void setup() {
+    //     // Set the path to the chromedriver executable for Chrome
+    //     System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+    //     driver = new ChromeDriver();
+    //     driver.manage().window().maximize();
     // }
-    
-    
 
-    private WebDriver driver;
+    // @Test
+    // public void testBrowserNavigation() {
+    //     // Navigate to "http://iamneo.ai"
+    //     driver.get("http://iamneo.ai");
 
-    @BeforeMethod
-    public void setup() {
-        // Set the path to the chromedriver executable for Chrome
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-    }
+    //     // Print PASS if the title matches "We are Hiring!", else FAIL
+    //     String pageTitle = driver.getTitle();
+    //     String expectedTitle = "We are Hiring!";
+    //     Assert.assertEquals(pageTitle, expectedTitle, "FAIL");
 
-    @Test
-    public void testBrowserNavigation() {
-        // Navigate to "http://iamneo.ai"
-        driver.get("http://iamneo.ai");
+    //     // Navigate to "https://www.facebook.com"
+    //     driver.navigate().to("https://www.facebook.com");
 
-        // Print PASS if the title matches "We are Hiring!", else FAIL
-        String pageTitle = driver.getTitle();
-        String expectedTitle = "We are Hiring!";
-        Assert.assertEquals(pageTitle, expectedTitle, "FAIL");
+    //     // Navigate back to "http://iamneo.ai"
+    //     driver.navigate().back();
 
-        // Navigate to "https://www.facebook.com"
-        driver.navigate().to("https://www.facebook.com");
+    //     // Print the URL of the current page
+    //     String currentURL = driver.getCurrentUrl();
+    //     System.out.println("Current URL: " + currentURL);
 
-        // Navigate back to "http://iamneo.ai"
-        driver.navigate().back();
+    //     // Navigate forward
+    //     driver.navigate().forward();
 
-        // Print the URL of the current page
-        String currentURL = driver.getCurrentUrl();
-        System.out.println("Current URL: " + currentURL);
+    //     // Reload the page
+    //     driver.navigate().refresh();
+    // }
 
-        // Navigate forward
-        driver.navigate().forward();
-
-        // Reload the page
-        driver.navigate().refresh();
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        // Close the browser
-        driver.quit();
-    }
+    // @AfterMethod
+    // public void tearDown() {
+    //     // Close the browser
+    //     driver.quit();
+    // }
 
 }
