@@ -5,7 +5,8 @@ public class AppTest {
     //     System.out.println("Hello World!");
     // }
     
-    /home/coder/project/workspace/springapp/springapp/src/test/java/ai/iamneo/testing/Testing_Selenium_TestNg
+    /home/coder/project/workspace/springapp/springapp/src/test/java/com/examly/springapp
+    
 
     private WebDriver driver;
 
