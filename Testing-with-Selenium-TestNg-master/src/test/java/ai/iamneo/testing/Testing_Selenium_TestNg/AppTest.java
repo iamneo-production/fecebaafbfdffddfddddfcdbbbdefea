@@ -23,7 +23,7 @@ public class AppTest {
 
 	@Test
 	public void TestCase_1() throws InterruptedException {
-		driver.get("http://iamneo.ai");					// navigates to iamneo.ai
+		driver.get("https://iamneo.ai");				// navigates to iamneo.ai
 		Thread.sleep(2000);  								// Pauses for 2 seconds
 		String title = driver.getTitle();					// gets title of the page
 		Assert.assertEquals(title, "We are Hiring!");
@@ -34,7 +34,7 @@ public class AppTest {
 		driver.navigate().back();								// navigates back to iamneo website
 		System.out.println(driver.getCurrentUrl());				// prints current url
 		driver.navigate().forward();
-		driver.navigate().refresh();						// refreshes the page							
+		driver.navigate().refresh();							// refreshes the page							
 	}
 
 	@AfterTest
