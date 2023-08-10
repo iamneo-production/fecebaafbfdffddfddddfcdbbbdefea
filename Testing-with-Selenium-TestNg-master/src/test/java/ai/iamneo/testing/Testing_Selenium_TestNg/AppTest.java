@@ -18,24 +18,23 @@ public class AppTest {
 	@BeforeTest
 	public void beforeTest() throws Exception {
 		driver = new RemoteWebDriver(new URL("http://localhost:8080"), chromeOptions);
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();				// maximizes the chrome window
 	}
 
 	@Test
 	public void TestCase_1() throws InterruptedException {
-		driver.get("http://iamneo.ai");
-		Thread.sleep(2000);  
-		String title = driver.getTitle();
+		driver.get("http://iamneo.ai");					// navigates to iamneo.ai
+		Thread.sleep(2000);  								// Pauses for 2 seconds
+		String title = driver.getTitle();					// gets title of the page
 		Assert.assertEquals(title, "We are Hiring!");
 	}
 	@Test
 	public void TestCase_2() throws InterruptedException {
-		driver.navigate().to("https://www.facebook.com");
-		driver.navigate().back();
-	}
-	@Test
-	public void TestCase_3() throws InterruptedException {
-		System.out.println(driver.getCurrentUrl());
+		driver.navigate().to("https://www.facebook.com");	// navigates forward to facebook.com
+		driver.navigate().back();								// navigates back to iamneo website
+		System.out.println(driver.getCurrentUrl());				// prints current url
+		driver.navigate().forward();
+		driver.navigate().refresh();						// refreshes the page							
 	}
 
 	@AfterTest
