@@ -24,17 +24,18 @@ public class AppTest {
 	@Test
 	public void TestCase_1() throws InterruptedException {
 		driver.get("http://iamneo.ai");
-		// driver.get("https://admin.pscollege841.exam.ly/");
-		Thread.sleep(5000);  
+		Thread.sleep(2000);  
 		String title = driver.getTitle();
-		Assert.assertEquals(title, "PS College");
+		Assert.assertEquals(title, "We are Hiring!");
 	}
 	@Test
 	public void TestCase_2() throws InterruptedException {
-		driver.get("https://admin.pscollege841.exam.ly/");
-		Thread.sleep(5000);  
-		String title = driver.getTitle();
-		Assert.assertEquals(title, "PS College");
+		driver.navigate().to("https://www.facebook.com");
+		driver.navigate().back();
+	}
+	@Test
+	public void TestCase_3() throws InterruptedException {
+		System.out.println(driver.getCurrentUrl());
 	}
 
 	@AfterTest
