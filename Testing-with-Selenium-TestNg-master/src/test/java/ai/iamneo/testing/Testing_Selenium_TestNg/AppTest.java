@@ -17,13 +17,14 @@ public class AppTest {
 
 	@BeforeTest
 	public void beforeTest() throws Exception {
-	//	System.setProperty("webdriver.chrome.driver", "/home/coder/project/workspace/Testing-with-Selenium-TestNg/chromedriver");
-		driver = new RemoteWebDriver(new URL("http://localhost:4444"), chromeOptions);
+		driver = new RemoteWebDriver(new URL("http://localhost:8080"), chromeOptions);
+		driver.manage().window().maximize();
 	}
 
 	@Test
 	public void TestCase_1() throws InterruptedException {
-		driver.get("https://admin.pscollege841.exam.ly/");
+		driver.get("http://iamneo.ai");
+		// driver.get("https://admin.pscollege841.exam.ly/");
 		Thread.sleep(5000);  
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "PS College");
